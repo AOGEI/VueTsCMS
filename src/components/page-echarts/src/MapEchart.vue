@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, computed } from 'vue'
+import { computed } from 'vue'
 
 import BaseEchart from './BaseEchart.vue'
 import { convertData } from '../utils/convert-data'

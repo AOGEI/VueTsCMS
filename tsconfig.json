@@ -12,9 +12,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "ignoreDeprecations": "5.0"
   },
-
   "references": [
     {
       "path": "./tsconfig.node.json"

@@ -3,9 +3,15 @@
     <div class="menu-icon" @click="handleMenuIconClick()">
       <!-- <el-icon size="large" v-if="isFold === true"><Fold /></el-icon>
       <el-icon size="large" v-if="isFold === false"><Expand /></el-icon> -->
-      <el-icon
-        ><component :is="isFold ? 'Expand' : 'Fold'"></component
-      ></el-icon>
+      <template v-if="isFold">
+        <el-icon><Expand /></el-icon>
+      </template>
+      <template v-if="!isFold">
+        <el-icon><Fold /></el-icon>
+      </template>
+      <!-- <el-icon>
+        <component :is="isFold ? 'Expand' : 'Fold'"></component>
+      </el-icon> -->
     </div>
     <div class="content">
       <div class="breadcrumb"><HeaderCrumb></HeaderCrumb></div>
